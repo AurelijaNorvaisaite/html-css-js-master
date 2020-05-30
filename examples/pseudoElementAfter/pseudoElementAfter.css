@@ -1,0 +1,4 @@
+button:after {
+  content: "abc";
+  color: red;
+}

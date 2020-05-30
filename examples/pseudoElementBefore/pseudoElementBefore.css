@@ -1,0 +1,4 @@
+button:before {
+  content: "abc";
+  color: red;
+}
