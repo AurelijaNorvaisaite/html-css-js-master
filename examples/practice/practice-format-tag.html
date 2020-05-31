@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>MY WEB</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        h3 {
+        background-color: bisque;
+            text-decoration-line: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Simply News 2<br/>Teen sets sail on solo round-the-world<br/>voyage</h1>
+<div class="nav">
+    <ul>
+        <li>Home<div class="Home">About Home</div></li>
+        <li>Blog</li>
+        <li>Video</li>
+        <li>About<div class="About">About About</div></li>
+    </ul>
+</div>
+    <header class="css">
+        <div id="icon">
+            <button>Icon</button>
+        </div>
+        <h1>Simply News 2</br>Teen sets sail on solo round-the-world</br>voyage</h1>
     </header>
         <article>
             <p>Source: Yahoo News.</p>
@@ -24,10 +42,10 @@
             <p>Any money raised from his journey will be donated to two charities -- Save the Children and the Tall Ships Youth Trust.</p>
         </article>
 
-    <header>
+    <header id="css-id">
         <h3>Vocabulary notes</h3>
     </header>
-        <article>
+        <article class="container">
             <ul>
                 <li><b>teen</b> - informal expression, short for teenager; a person between 13 and 19 years old.</li>
                 <li><b>youngster</b> - a young person, boy or girl from small child to much older. An old person might even call a 25-year-old a youngster!</li>
@@ -46,7 +64,7 @@
     <header>
         <h3>Verbs and grammar notes</h3>
     </header>
-        <section>
+        <section class="container">
             <ol>
                 <li><b>set sail</b> - to set off in a boat or ship; to begin the ship's journey; to depart by boat.</li>
                 <li><b>in a bid to become</b> - in an attempt to achieve something. 'His bid to become world champion' means that he wanted to become world champion and took steps to achieve that ambition.</li>
@@ -62,7 +80,17 @@
 
     <footer>
         <p>This article is reproduced for language learning practice. Copyright acknowledged.</p>
+        <div id="contain">
+            Text
+        </div>
     </footer>
+
+    <nav class="navigation">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+    </nav>
 
     <nav>
         <img src = "cat.jpg" alt="Picture" width="400" height="350">

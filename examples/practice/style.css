@@ -1,0 +1,118 @@
+body {
+    color: #470808;
+
+}
+
+
+HTML {
+    background-color: rgba(224, 186, 154, 0.75);
+}
+
+h1 {
+    font-family: "Malgun Gothic";
+}
+
+p {
+    border: #ff6dde 3px solid;
+    padding: 10px;
+    margin: 3px
+}
+
+section {
+    text-align: end;
+
+}
+
+nav {
+    padding: 20px;
+}
+
+article:hover {
+    background-color: darkgrey;
+    text-decoration-line: underline
+}
+
+.css {
+    color: #070303;
+    position: fixed;
+    background-color: #ff6dde;
+    text-align: center;
+}
+
+#css-id {
+    color: #ab1ed2;
+}
+
+#icon {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+#contain {
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+}
+
+footer {
+    position: relative;
+}
+
+.container {
+    border: #6dffcc 1px solid;
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.navigation {
+    display: inline-block;
+}
+
+.nav{
+    padding: 0;
+    margin: 0;
+    background: black;
+    border-bottom: 10px solid #37f;
+    box-shadow: 3px 0px 5px grey;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px 40px;
+    font-size: 24px;
+    color: white;
+    transition: .5s;
+}
+
+ul li:hover {
+    background: #ff6dde;
+    font-weight: bold;
+}
+
+
+
+.Home{
+    display: none;
+}
+
+ul li:hover .Home{
+    display: block;
+}
+
+
+
+
+.About {
+    display: none;
+}
+
+ul li:hover .About{
+    display: block;
+}
