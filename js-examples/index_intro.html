@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS :)</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+<!--    <script src="1-example.js" type="application/javascript"></script>-->
+<!--    <script src="2-example.js" type="application/javascript"></script>-->
+<!--    <script src="3-example.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-a.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-b.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-c.js" type="application/javascript"></script>-->
+</head>
+<body>
+    <div id="test" onclick="showDialog();">
+        Testas
+    </div>
+    <script>
+        var d = document.getElementById('test');
+        console.log(d);
+
+        function showDialog() {
+          alert("Was clicked div");
+        }
+    </script>
+</body>
+</html>

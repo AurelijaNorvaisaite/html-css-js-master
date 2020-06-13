@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS :)</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        nav > ul {
+            padding-inline-start: 20px;
+        }
+
+        nav > ul > li {
+            text-align: center;
+            display: inline-block;
+            padding: 5px;
+            border: gray solid 2px;
+        }
+
+        nav > ul > li:hover {
+            color: blue;
+            background-color: azure;
+        }
+
+        section {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #home {
+            display: none;
+        }
+
+        #gallery {
+            display: none;
+        }
+
+        #about {
+            display: none;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+    </style>
+<!--    <script src="1-example.js" type="application/javascript"></script>-->
+<!--    <script src="2-example.js" type="application/javascript"></script>-->
+<!--    <script src="3-example.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-a.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-b.js" type="application/javascript"></script>-->
+<!--    <script src="4-example-c.js" type="application/javascript"></script>-->
+    <script src="5-example.js" type="application/javascript"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li onclick="showSection('home', ['gallery', 'about']);">Home</li>
+        <li onclick="showSection('gallery', ['home', 'about']);">Gallery</li>
+        <li onclick="showSection('about', ['home', 'gallery']);">About</li>
+    </ul>
+    <section id="home">
+        Home page with a lot of stuff.
+    </section>
+    <section id="gallery">
+        <div class="column">
+            <div class="row">
+                <img onclick="resizeImage(this);" src="https://via.placeholder.com/150" />
+            </div>
+            <div class="row">
+                <img onclick="resizeImage(this);" src="https://via.placeholder.com/150" />
+            </div>
+            <div class="row">
+                <img onclick="resizeImage(this);" src="https://via.placeholder.com/150" />
+            </div>
+            <div class="row">
+                <img onclick="createImageInOverlay(this);" src="https://via.placeholder.com/150" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        This is a page for learning about front end.
+    </section>
+    <div id="overlay"></div>
+</nav>
+</body>
+</html>
