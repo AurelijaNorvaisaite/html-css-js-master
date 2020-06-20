@@ -16,7 +16,7 @@
     <ul>
         <li>Home<div class="Home">About Home</div></li>
         <li>Blog</li>
-        <li>Video</li>
+        <li>Gallery</li>
         <li>About<div class="About">About About</div></li>
     </ul>
 </div>
@@ -46,7 +46,7 @@
         <h3>Vocabulary notes</h3>
     </header>
         <article class="container">
-            <ul>
+            <ol>
                 <li><b>teen</b> - informal expression, short for teenager; a person between 13 and 19 years old.</li>
                 <li><b>youngster</b> - a young person, boy or girl from small child to much older. An old person might even call a 25-year-old a youngster!</li>
                 <li><b>yacht</b> - a kind of boat or ship large enough to have living accommodation. It usually has sails and is powered by the wind.</li>
@@ -58,7 +58,7 @@
                 <li><b>I'm a little bit nervous</b> - Literally, I'm slightly worried. But this expression 'a little bit ...' is probably an under-statement. He may be very anxious but does not want to say that.</li>
                 <li><b>at one with nature</b> - at peace with the scenery, environment, the wildlife, etc. Feeling very close to the natural world.</li>
                 <li><b>longitude</b> - imaginary lines which run from the North Pole to the South Pole through the Equator. Compare with: latitude.</li>
-            </ul>
+            </ol>
         </article>
 
     <header>
@@ -95,6 +95,26 @@
     <nav>
         <img src = "cat.jpg" alt="Picture" width="400" height="350">
     </nav>
+
+<script>
+// let's find an element
+    var element = document.getElementById("css-id")
+//    let's set the element's text first.
+    element.innerHTML = "<p>Vocabulary</p>";
+//    and then mess with it!
+    element.style = "color: red; transform: rotate(180deg);";
+</script>
+
+<script src ="script.js"></script>
+<script>debugger; console.log("Hello world!")</script>
+<!--<script>-->
+<!--    function fibonacci2(index = 1, cache = [0,1,1]) {-->
+<!--        if(cache[index]) return cache[index];-->
+<!--        if(index < 3) return 1;-->
+<!--        return fibonacci2(index - 1, cache) + fibonacci2(index - 2, cache);-->
+<!--    }-->
+<!--    console.log(fibonacci2(45))-->
+<!--</script>-->
 
 </body>
 </html>
